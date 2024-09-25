@@ -1,34 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Simple Carousel</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Whirli - Toy Subscription Service</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
 </head>
-<body>
 
-    <div class="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="image1.jpg" alt="Image 1">
+<body>
+    <section class="features-section">
+        <div class="features-container">
+            <div class="feature-item">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/03592486043a5ef64a9d820c9b9ab9d3e3de168264578a4fcb0a9d967076bbbd?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                    alt="Free Delivery Icon" class="feature-icon" />
+                <span class="feature-text">Free First Delivery</span>
+            </div>
+            <div class="feature-item">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1176a465af1d64958783c5d1cb0834c1523f96f8dbdbadf66a1ff5dc921bb1b9?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                    alt="Quality Guarantee Icon" class="feature-icon" />
+                <span class="feature-text">Quality & Hygiene Guarantee</span>
+            </div>
+            <div class="feature-item">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/36a71b903f9f7e957572ccf0be1f53b6c47737ec629bcbaeecbb50e25fe23242?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                    alt="Happy Parents Icon" class="feature-icon" />
+                <span class="feature-text">XX+ Happy Parents</span>
+            </div>
+            <div class="feature-item">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/326db9fa5234ad9058b4f44e5ab101deb402e90dc1777dd057881f5254e91f8d?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                    alt="Customer Support Icon" class="feature-icon" />
+                <span class="feature-text">Dedicated Customer Support</span>
+            </div>
+        </div>
+    </section>
+    <header class="main-header">
+        <div class="header-content">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b4221f09b4e0249643958cc9b0ad0d181a7896e80368987487097a46b379f5d1?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                alt="Whirli Logo" class="logo" />
+            <nav class="nav-menu">
+                <a href="#" class="nav-link">How it works</a>
+                <a href="#" class="nav-link">About Whirli</a>
+                <a href="#" class="nav-link">Pricing</a>
+                <a href="#" class="nav-link">Gifts</a>
+                <a href="#" class="nav-link">Short term rentals</a>
+                <a href="#" class="nav-link">Marketplace</a>
+            </nav>
+            <div class="user-actions">
+                <a href="#" class="login-button">Log in</a>
+                <a href="#" class="join-button">Join Today</a>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f2ecd5da7d44683436567b854de300fb503f20932b9ae1e0a0acfe74dcd1e04?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                            alt="" class="social-icon" />
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/481bdb2f030a7dc0ea2ecd19bf3a6fdf3721af28118f4e7a31677a55b9e0fe3f?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                            alt="" class="social-icon" />
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9ab8fc69fe68d321ab5c724046102d36c97fc8f164340ed1b9055b62f1bcc5d4?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                            alt="" class="social-icon" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="category-nav">
+        <ul class="category-list">
+            <li class="category-item">
+                <a href="#" class="category-link">New & seasonal</a>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5c2551aa9a4a773e700c9defa3e5a44679e97268f9101d604f78fdd1054d1da4?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                    alt="" class="dropdown-icon" />
+            </li>
+            <li class="category-item">
+                <a href="#" class="category-link">Toys</a>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5c2551aa9a4a773e700c9defa3e5a44679e97268f9101d604f78fdd1054d1da4?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                    alt="" class="dropdown-icon" />
+            </li>
+            <li class="category-item">
+                <a href="#" class="category-link">Baby equipment</a>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5c2551aa9a4a773e700c9defa3e5a44679e97268f9101d604f78fdd1054d1da4?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                    alt="" class="dropdown-icon" />
+            </li>
+            <li class="category-item">
+                <a href="#" class="category-link">Bundles</a>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5c2551aa9a4a773e700c9defa3e5a44679e97268f9101d604f78fdd1054d1da4?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                    alt="" class="dropdown-icon" />
+            </li>
+            <li class="category-item">
+                <a href="#" class="category-link">Books</a>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5c2551aa9a4a773e700c9defa3e5a44679e97268f9101d604f78fdd1054d1da4?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                    alt="" class="dropdown-icon" />
+            </li>
+            <li class="category-item">
+                <a href="#" class="category-link">Shop by Play</a>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5c2551aa9a4a773e700c9defa3e5a44679e97268f9101d604f78fdd1054d1da4?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                    alt="" class="dropdown-icon" />
+            </li>
+            <li class="category-item">
+                <a href="#" class="category-link">Shop by age</a>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5c2551aa9a4a773e700c9defa3e5a44679e97268f9101d604f78fdd1054d1da4?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                    alt="" class="dropdown-icon" />
+            </li>
+            <li class="category-item">
+                <a href="#" class="category-link">Shop by brand</a>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5c2551aa9a4a773e700c9defa3e5a44679e97268f9101d604f78fdd1054d1da4?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                    alt="" class="dropdown-icon" />
+            </li>
+            <li class="category-item">
+                <a href="#" class="category-link">Crafts</a>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5c2551aa9a4a773e700c9defa3e5a44679e97268f9101d604f78fdd1054d1da4?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                    alt="" class="dropdown-icon" />
+            </li>
+        </ul>
+    </nav>
+
+
+    <section class="how-whirli-works-container">
+        <h2 class="section-title">How Whirli works</h2>
+        <div class="features-grid">
+            <article class="feature-items">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/09d145fa3028a187f25726e36a8277c00071dce11702893a334a2a605323607d?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                    alt="Illustration of toy selection process" class="feature-image" />
+                <div class="feature-content">
+                    <h3 class="feature-title">Choose your toys</h3>
+                    <p class="feature-description">Pick from more than 1000+ of <br /> the latest must-haves</p>
+                </div>
+            </article>
+            <article class="feature-items">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2dae5f582fd16c713411d617001af05a48688a7361f8ee1503d3525aa8230ffe?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                    alt="Illustration of flexible toy usage" class="feature-image" />
+                <div class="feature-content">
+                    <h3 class="feature-title">Totally Flexible</h3>
+                    <p class="feature-description">Keep toys for only as long as they're loved.</p>
+                </div>
+            </article>
+            <article class="feature-items">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e3674942cdbefe827453b79c44dcf879f8d8ffb7a06dcbcf3124f980c469e07d?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                    alt="Illustration of toy swapping process" class="feature-image" />
+                <div class="feature-content">
+                    <h3 class="feature-title">Play, Swap, Repeat…</h3>
+                    <p class="feature-description">Return toys that are out of favor <br /> and swap them for ones that
+                        are
+                        fresh & fun.</p>
+                </div>
+            </article>
+            <article class="feature-items">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/74397661cc1d0dd717b5cca834251e198f47ad6fbc41e48090a8c07074e3b963?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                    alt="Illustration of keeping favorite toys" class="feature-image keep-forever-image" />
+                <div class="feature-content">
+                    <h3 class="feature-title">…or keep them forever</h3>
+                    <p class="feature-description">If a toy becomes your child's favourite, buy it and keep it forever
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!--  -->
+    <section class="why-choose-section"></section>
+    <div class="content-wrapper">
+        <h2 class="section-titles">Why choose whirli</h2>
+        <div class="features-containers">
+            <article class="feature-cards">
+                <div class="feature-image-wrapper">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/27242ea7f5bbb8a6a6dc2f4997bbe88d7245220811c30011eac8962a3aa6b97c?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                        class="feature-image" alt="Illustration of toys being recycled" loading="lazy">
+                </div>
+                <div class="feature-contents">
+                    <h3 class="feature-titles">Help Protect The Planet</h3>
+                    <p class="feature-descriptions">
+                        Play is essential, and cherished toys are irreplaceable. Yet, in the UK alone, 6 million tonnes
+                        of working toys end up in landfills yearly.
+                        <br><br>
+                        With Whirli, your children enjoy the latest must-have toys. But when they're ready for something
+                        new, we'll find the toy a new home and put another toy in yours – instead of the landfill!
+                    </p>
+                </div>
+            </article>
+
+            <article class="feature-cards feature-cards-reverse">
+                <div class="feature-image-wrapper">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/018d1c3b5347bb9edbc83deb39da9294fbf800260f718dc15eefbfc54ec25d30?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                        class="feature-image" alt="Illustration of money savings and toys" loading="lazy">
+                </div>
+                <div class="feature-contents">
+                    <h3 class="feature-titles">Save Money, Enjoy More</h3>
+                    <p class="feature-descriptions">
+                        Enjoy access to 1,000+ toys without the hefty individual price tags.
+                        <br>
+                        With Whirli you pay for the play, then you swap and save.
+                    </p>
+                </div>
+            </article>
+
+            <article class="feature-cards">
+                <div class="feature-image-wrapper">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7e4ab4ed97b8843e94c987791ccee7ab7fdb0e74a4805de5acef9fcd27b9b886?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                        class="feature-image" alt="Illustration of a child playing with various toys" loading="lazy">
+                </div>
+                <div class="feature-contents">
+                    <h3 class="feature-titles">Watch your child thrive</h3>
+                    <p class="feature-descriptions">
+                        See your child flourish and learn through play with our diverse selection of toys. They'll get
+                        to play with an endless selection of toys and learn a valuable lesson about sharing.
+                    </p>
+                    <a href="#toy-library" class="cta-button">Explore our Toy Library</a>
+                </div>
+            </article>
+        </div>
+    </div>
+    </section>
+    <section class="shop-by-age-container">
+        <h2 class="shop-by-age-title">Shop by age</h2>
+        <div class="age-group-row">
+            <div class="age-group-item" tabindex="0" role="button" aria-label="Shop for 0-3 months">0-3 months</div>
+            <div class="age-group-item" tabindex="0" role="button" aria-label="Shop for 3-6 months">3-6 months</div>
+            <div class="age-group-item" tabindex="0" role="button" aria-label="Shop for 6-9 months">6-9 months</div>
+            <div class="age-group-item" tabindex="0" role="button" aria-label="Shop for 9-12 months">9-12 months</div>
+            <div class="age-group-item" tabindex="0" role="button" aria-label="Shop for 12-15 months">12-15 months</div>
+            <div class="age-group-item" tabindex="0" role="button" aria-label="Shop for 15-18 months">15-18 months</div>
+            <div class="age-group-item" tabindex="0" role="button" aria-label="Shop for 18-24 months">18-24 months</div>
+            <div class="age-group-item" tabindex="0" role="button" aria-label="Shop for 2-3 years">2-3 years</div>
+            <div class="age-group-item" tabindex="0" role="button" aria-label="Shop for 3-5 years">3-5 years</div>
+            <div class="age-group-item" tabindex="0" role="button" aria-label="Shop for 5-8 years">5-8 years</div>
+        </div>
+    </section>
+    <!-- slider  -->
+    <section class="toy-bundles">
+        <div class="toy-bundles-container">
+          <h2 class="section-title">Explore Our Toy Bundles</h2>
+          <div class="age-filter" role="tablist">
+            <button
+              class="age-button age-button-active"
+              role="tab"
+              aria-selected="true"
+              aria-controls="0-12-months"
+            >
+              0-12 Months
+            </button>
+            <button
+              class="age-button age-button-inactive"
+              role="tab"
+              aria-selected="false"
+              aria-controls="12-24-months"
+            >
+              12-24 Months
+            </button>
+            <button
+              class="age-button age-button-inactive"
+              role="tab"
+              aria-selected="false"
+              aria-controls="24-months-plus"
+            >
+              24 months +
+            </button>
           </div>
-          <div class="carousel-item">
-            <img src="image2.jpg" alt="Image 2">
-          </div>
-          <div class="carousel-item">
-            <img src="image3.jpg" alt="Image 3">
+          <div
+            class="bundles-carousel"
+            id="0-12-months"
+            role="tabpanel"
+            aria-labelledby="0-12-months-tab"
+          >
+            <div class="carousel-container">
+              <div class="carousel-track js-carousel-track">
+                <article class="bundle-card">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/57ea1c88266b50f8291593244f51cc69fd0a7b3bd50013115b1e47581ecaa2ee?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                    alt="Immersion bundle toy set"
+                    class="bundle-image"
+                  />
+                  <div class="bundle-content">
+                    <h3 class="bundle-title">Immersion bundle</h3>
+                    <p class="bundle-description">
+                      Nunc tempus sollicitudin urna, non bibendum mauris commodo
+                      eu.
+                    </p>
+                  </div>
+                </article>
+                <article class="bundle-card">
+                  <div class="age-tag"><span>0-12 Months</span></div>
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/135b800ff635f140f3d985426abc8539444e4fdd67343f16a9b8b2ed4108aa73?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                    alt="Sensory bundle toy set"
+                    class="bundle-image"
+                  />
+                  <div class="bundle-content">
+                    <div class="bundle-rating">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b51318c8491749fae90b2466e1666942ab1909bb343ceadf67cfa1a1b69bb8a3?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                        alt="Star rating"
+                        class="star-icon"
+                      />
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b51318c8491749fae90b2466e1666942ab1909bb343ceadf67cfa1a1b69bb8a3?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                        alt="Star rating"
+                        class="star-icon"
+                      />
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b51318c8491749fae90b2466e1666942ab1909bb343ceadf67cfa1a1b69bb8a3?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                        alt="Star rating"
+                        class="star-icon"
+                      />
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b51318c8491749fae90b2466e1666942ab1909bb343ceadf67cfa1a1b69bb8a3?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                        alt="Star rating"
+                        class="star-icon"
+                      />
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b51318c8491749fae90b2466e1666942ab1909bb343ceadf67cfa1a1b69bb8a3?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                        alt="Star rating"
+                        class="star-icon"
+                      />
+                      <span aria-label="17 reviews">(17)</span>
+                    </div>
+                    <h3 class="bundle-title">Sensory bundle</h3>
+                    <p class="bundle-description">
+                      Toys to engage your child's senses and connection to the
+                      world around them, including sight, sound, touch and more.
+                    </p>
+                    <button class="cta-button">See What's Inside</button>
+                  </div>
+                </article>
+                <article class="bundle-card">
+                  <span class="age-tag">0-12 Months</span>
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/eb6ca21bdac11b6a673559a02ac720d6f858ef4ff8b18a85de354db50529da2b?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                    alt="Immersion bundle toy set"
+                    class="bundle-image"
+                  />
+                  <div class="bundle-content">
+                    <div class="bundle-rating">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b51318c8491749fae90b2466e1666942ab1909bb343ceadf67cfa1a1b69bb8a3?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                        alt="Star rating"
+                        class="star-icon"
+                      />
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b51318c8491749fae90b2466e1666942ab1909bb343ceadf67cfa1a1b69bb8a3?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                        alt="Star rating"
+                        class="star-icon"
+                      />
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b51318c8491749fae90b2466e1666942ab1909bb343ceadf67cfa1a1b69bb8a3?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                        alt="Star rating"
+                        class="star-icon"
+                      />
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b51318c8491749fae90b2466e1666942ab1909bb343ceadf67cfa1a1b69bb8a3?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                        alt="Star rating"
+                        class="star-icon"
+                      />
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b51318c8491749fae90b2466e1666942ab1909bb343ceadf67cfa1a1b69bb8a3?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                        alt="Star rating"
+                        class="star-icon"
+                      />
+                      <span aria-label="17 reviews">(17)</span>
+                    </div>
+                    <h3 class="bundle-title">Immersion bundle</h3>
+                    <p class="bundle-description">
+                      Imaginative toys that allow your child to immerse themself
+                      in play and express their burgeoning creativity
+                    </p>
+                  </div>
+                </article>
+                <article class="bundle-card">
+                  <span class="age-tag">0-12 Months</span>
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/eef97a3b1f045de06f58222a9c9aec22a366fd9eacb2d30b6ac95cf4735baf88?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                    alt="Discovery bundle toy set"
+                    class="bundle-image"
+                  />
+                  <div class="bundle-content">
+                    <div class="bundle-rating">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b51318c8491749fae90b2466e1666942ab1909bb343ceadf67cfa1a1b69bb8a3?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                        alt="Star rating"
+                        class="star-icon"
+                      />
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b51318c8491749fae90b2466e1666942ab1909bb343ceadf67cfa1a1b69bb8a3?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                        alt="Star rating"
+                        class="star-icon"
+                      />
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b51318c8491749fae90b2466e1666942ab1909bb343ceadf67cfa1a1b69bb8a3?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                        alt="Star rating"
+                        class="star-icon"
+                      />
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b51318c8491749fae90b2466e1666942ab1909bb343ceadf67cfa1a1b69bb8a3?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                        alt="Star rating"
+                        class="star-icon"
+                      />
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b51318c8491749fae90b2466e1666942ab1909bb343ceadf67cfa1a1b69bb8a3?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                        alt="Star rating"
+                        class="star-icon"
+                      />
+                      <span aria-label="17 reviews">(17)</span>
+                    </div>
+                    <h3 class="bundle-title">Discovery bundle</h3>
+                    <p class="bundle-description">
+                      Toys that spark your child's natural curiosity, encouraging
+                      hands on learning and adventure.
+                    </p>
+                  </div>
+                </article>
+                <article class="bundle-card">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/5e498a868e21a51380bafd5a0845867ee374152fb33343929da43b0718207533?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                    alt="Discovery bundle toy set"
+                    class="bundle-image"
+                  />
+                  <div class="bundle-content">
+                    <div class="bundle-rating">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b51318c8491749fae90b2466e1666942ab1909bb343ceadf67cfa1a1b69bb8a3?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                        alt="Star rating"
+                        class="star-icon"
+                      />
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b51318c8491749fae90b2466e1666942ab1909bb343ceadf67cfa1a1b69bb8a3?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                        alt="Star rating"
+                        class="star-icon"
+                      />
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b51318c8491749fae90b2466e1666942ab1909bb343ceadf67cfa1a1b69bb8a3?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                        alt="Star rating"
+                        class="star-icon"
+                      />
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b51318c8491749fae90b2466e1666942ab1909bb343ceadf67cfa1a1b69bb8a3?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                        alt="Star rating"
+                        class="star-icon"
+                      />
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b51318c8491749fae90b2466e1666942ab1909bb343ceadf67cfa1a1b69bb8a3?placeholderIfAbsent=true&apiKey=61069e187d324174b2b9fd9b214a7774"
+                        alt="Star rating"
+                        class="star-icon"
+                      />
+                      <span aria-label="17 reviews">(17)</span>
+                    </div>
+                    <h3 class="bundle-title">Discovery bundle</h3>
+                    <p class="bundle-description">
+                      Nunc tempus sollicitudin urna, non bibendum mauris commodo
+                      eu.
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
           </div>
         </div>
-        <button class="carousel-control prev">
-          <i class="fas fa-chevron-left"></i>
-        </button>
-        <button class="carousel-control next">
-          <i class="fas fa-chevron-right"></i>
-        </button>
-      </div>
-      
-
-<script src="script.js"></script>
+      </section>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+      <script src="./script.js">
+      </script>
 </body>
 </html>
